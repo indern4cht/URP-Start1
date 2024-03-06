@@ -72,14 +72,14 @@ public class click : MonoBehaviour
         GameController = GameObject.Find("GameController").GetComponent<gameController>();
         GameController.DiceNumberCheck();
         int numberDice = GameController.numberDice;
-        for (int i = 1; i < numberDice; i++)
-        {
-            GameObject fn = GameObject.Find("MakeDie (" + (i) + ")");
-            if (fn != null) //Check to see if the thing exists before you destroy it
-            {
-                DestroyObject(fn);
-            }
-        }
+       // for (int i = 1; i < numberDice; i++)
+        //{
+         //   GameObject fn = GameObject.Find("MakeDie (" + (i) + ")");
+          //  if (fn != null) //Check to see if the thing exists before you destroy it
+           // {
+            //    DestroyObject(fn);
+            //}
+        //}
         //GameController.numberDice = 1;
         //GameController.DiceNumberCheck();
         GameController.makeDie();

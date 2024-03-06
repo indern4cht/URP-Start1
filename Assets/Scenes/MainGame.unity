@@ -297,10 +297,10 @@ RectTransform:
   m_Father: {fileID: 1282116286}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.2651, y: -0.000045776}
-  m_SizeDelta: {x: 1915.5, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &27525595
 MonoBehaviour:
@@ -314,6 +314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6047af9e4ee829b48a83f3683e3c8d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SetActive: 
+  Children: []
+  ChildCount: 0
 --- !u!1 &67609993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1088,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &299830734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1226,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1718,7 +1745,7 @@ RectTransform:
   m_GameObject: {fileID: 490198521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 1.4632559, y: 1.4632559, z: 5.8530235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1095044462}
@@ -1726,7 +1753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -255.91064, y: -100.61902}
+  m_AnchoredPosition: {x: -254, y: -81.73}
   m_SizeDelta: {x: 349.76953, y: 137.53003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490198523
@@ -1925,6 +1952,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7038,7 +7077,7 @@ RectTransform:
   m_GameObject: {fileID: 635133200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -61.50667}
-  m_LocalScale: {x: 0.6834075, y: 0.6834075, z: 0.6834075}
+  m_LocalScale: {x: 1, y: 1, z: 0.6834075}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1095044462}
@@ -7047,8 +7086,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -83}
-  m_SizeDelta: {x: 889.5, y: 239.17993}
+  m_AnchoredPosition: {x: 0, y: -81.73001}
+  m_SizeDelta: {x: 0, y: 163.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635133202
 MonoBehaviour:
@@ -7286,7 +7325,7 @@ RectTransform:
   m_GameObject: {fileID: 682203767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 439943597}
@@ -7296,7 +7335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 913, y: -119.68}
+  m_AnchoredPosition: {x: 658, y: -81.73}
   m_SizeDelta: {x: 602.17896, y: 239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &682203769
@@ -7753,7 +7792,7 @@ RectTransform:
   m_GameObject: {fileID: 1002151592}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 1.4632559, y: 1.4632559, z: 5.8530235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1095044462}
@@ -7761,7 +7800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -695.056, y: -100.61902}
+  m_AnchoredPosition: {x: -695.056, y: -81.73004}
   m_SizeDelta: {x: 136.7999, y: 137.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002151594
@@ -8044,10 +8083,10 @@ RectTransform:
   m_Father: {fileID: 635133201}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -119.5}
-  m_SizeDelta: {x: 0, y: 239}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095044463
 MonoBehaviour:
@@ -8285,6 +8324,8 @@ MonoBehaviour:
   validDiceSelect: 01
   enabledDice: 00010000000000
   toolTips: 
+  tt_Clear: 0
+  tt_count: 0
   counts: 00000000000000000000000000000000000000000000000000000000
   numberDice: 1
   diceShown: 0
@@ -8346,7 +8387,7 @@ RectTransform:
   m_GameObject: {fileID: 1246866571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1547376991}
@@ -8356,7 +8397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 276.89282, y: -119.5}
+  m_AnchoredPosition: {x: 195, y: -81.73}
   m_SizeDelta: {x: 553.78564, y: 239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246866573
@@ -8692,6 +8733,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1491811019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8818,6 +8871,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9097,10 +9162,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 27525593}
+      - m_Target: {fileID: 1563770571}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9505,6 +9582,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 27525595}
+        m_TargetAssemblyTypeName: ttController, Assembly-CSharp
+        m_MethodName: activeTT
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -16,6 +16,8 @@ public class gameController : MonoBehaviour
     public bool[] validDiceSelect;
     public bool[] enabledDice;
     public bool[] toolTips;
+    public bool tt_Clear;
+    public int tt_count;
     //public int[] sortDice;
     public int[] counts;
     public int numberDice;
@@ -50,12 +52,12 @@ public class gameController : MonoBehaviour
 
     void Start()    // Start is called before the first frame update
     {
-
+        tt_count = GameObject.Find("ToolTips").GetComponent<ttController>().SetActive.Count;
         //Instance = this;
-        //test comment
         DiceNumberCheck();
         loadScorebook();
-        //toolTips.Length = GameObject.Find("ToolTips").GetComponentInChildren<ttController>().
+        Array.Resize<bool>(ref toolTips, tt_count);
+        //toolTips.Length = GameObject.Find("ToolTips").GetComponent<ttController>().Children.Count;
     }
 
     void Update()   // Update is called once per frame
@@ -97,10 +99,19 @@ public class gameController : MonoBehaviour
                
                 
             }
+
+            
+            if (tt_Clear)
+            {
+                for (int i = 0; i < tt_count; i++)
+                {
+                    //toolTips[i] = GameObject.Find("ToolTips").GetComponent<ttController>().SetActive[i];
+                    GameObject.Find("ToolTips").GetComponent<ttController>().Children[i].SetActive(false);
+                }
+            }
         }
         diceShown = GameObject.FindGameObjectsWithTag("Dice").Length;
 
-        
        
 
     }
