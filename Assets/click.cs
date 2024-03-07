@@ -59,6 +59,7 @@ public class click : MonoBehaviour
     {
         GameController = GameObject.Find("GameController").GetComponent<gameController>();
         GameController.Score();
+        GameController.saveBones();
         //GameController.RollPenalty();
     }
 
